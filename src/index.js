@@ -133,9 +133,8 @@ io.on('connection', socket => {
 
 // --- Start server ---
 const PORT = process.env.PORT || 5000;
-const HOST = process.env.HOST || 'localhost';
 
-server.listen(PORT, HOST, () => {
-  console.log(`🚀 Server running on http://${HOST}:${PORT}`);
+server.listen(PORT, () => {
+  console.log(`🚀 Server running on ${PORT}`);
 });
 
